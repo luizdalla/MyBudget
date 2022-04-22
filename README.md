@@ -45,7 +45,7 @@ Para aprender mais sobre como desenvolver projetos de Data Science, AI, Criaçã
 
 
 
-<p align="center">Copyright © 2021 Rodrigo Vanzelotti</p>
+<p align="center">Copyright © 2022 Asimov Academy</p>
 
 
 
