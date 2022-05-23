@@ -25,6 +25,9 @@ graph_margin=dict(l=25, r=25, t=25, b=0)
 
 # =========  Layout  =========== #
 layout = dbc.Col([
+
+        # Cards na parte superior
+
         dbc.Row([
             # Saldo
             dbc.Col([
@@ -69,6 +72,8 @@ layout = dbc.Col([
                 ], width=4),
         ], style={"margin": "10px"}),
 
+        # Secao de filtros
+
         dbc.Row([
             dbc.Col([
                 dbc.Card([
@@ -111,12 +116,14 @@ layout = dbc.Col([
             dbc.Col(dbc.Card(dcc.Graph(id="graph1"), style={"height": "100%", "padding": "10px"}), width=8),
         ], style={"margin": "10px"}),
 
+        # Graficos da parte inferior
+
         dbc.Row([
             dbc.Col(dbc.Card(dcc.Graph(id="graph2"), style={"padding": "10px"}), width=6),
             dbc.Col(dbc.Card(dcc.Graph(id="graph3"), style={"padding": "10px"}), width=3),
             dbc.Col(dbc.Card(dcc.Graph(id="graph4"), style={"padding": "10px"}), width=3),
         ], style={"margin": "10px"})
-    ])
+])
 
 
 

@@ -27,6 +27,9 @@ list_despesas_aux = list_despesas.to_dict()
 # =========  Layout  =========== #
 content = html.Div(id="page-content")
 
+
+# esse componente Store grava uma copia dos dados na memoria
+
 app.layout = dbc.Container(children=[
     dcc.Store(id='store-receitas', data=df_receitas_aux),
     dcc.Store(id="store-despesas", data=df_despesas_aux),
@@ -57,4 +60,5 @@ def render_page_content(pathname):
         
 
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8050, host='0.0.0.0')
+    # app.run_server(debug=True, port=8050, host='0.0.0.0')
+    app.run_server(debug=True, port=8050)
